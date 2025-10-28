@@ -34,10 +34,10 @@ Resources:
   LambdaLogGroup:
     Type: AWS::Logs::LogGroup
     Properties:
-      LogGroupName: !Sub "/aws/lambda/${TicketProcessorLambda}"
+      LogGroupName: !Sub "/aws/lambda/${GetTicketsLambda}"
       RetentionInDays: 7
 
 Outputs:
   LambdaArn:
     Description: ARN de la función Lambda
-    Value: !GetAtt TicketProcessorLambda.Arn
+    Value: !GetAtt GetTicketsLambda.Arn

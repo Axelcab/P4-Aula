@@ -21,4 +21,4 @@ Resources:
         Type: AWS_PROXY
         # Lambdas require POST METHOD
         IntegrationHttpMethod: POST
-        Uri: !Sub "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${TicketAnalyticsLambda.Arn}/invocations"
+        Uri: !Sub "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${GetTicketsLambda.Arn}/invocations"
